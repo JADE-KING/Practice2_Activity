@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yelia.practice2_activity.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/textFromAnother"
+        android:textSize="18sp"
+        android:background="@drawable/shape_text"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/editToAnother"
+        android:textSize="18sp"
+        android:background="@drawable/shape_text"
+        android:gravity="top"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:hint="Here you can edit and click the button below to send your message to another activity."
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonToAnother"
+        android:text="Click to move into another activity"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        />
+
+</LinearLayout>
