@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         if(requestCode == 0 && resultCode == 0) {
             String str = data.getStringExtra("editToMain");
             TextView textFromAnother = (TextView)findViewById(R.id.textFromAnother);
-            textFromAnother.setText("Text from another activity:\n    " + str);
+            textFromAnother.setText("Text from another activity:\n" + str);
             EditText editToAnother = (EditText)findViewById(R.id.editToAnother);
             editToAnother.setText("");
         }

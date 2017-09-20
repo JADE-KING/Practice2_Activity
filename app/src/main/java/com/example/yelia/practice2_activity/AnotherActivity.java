@@ -19,7 +19,7 @@ public class AnotherActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String fromMain = intent.getStringExtra("editToAnother");
         TextView textFromMain = (TextView)findViewById(R.id.textFromMain);
-        textFromMain.setText("Text from the main activity:\n    " + fromMain);
+        textFromMain.setText("Text from the main activity:\n" + fromMain);
 
         Button buttonToMain = (Button)findViewById(R.id.buttonToMain);
         buttonToMain.setOnClickListener(new View.OnClickListener() {
