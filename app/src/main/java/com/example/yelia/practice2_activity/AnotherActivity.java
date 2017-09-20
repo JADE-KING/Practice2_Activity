@@ -16,6 +16,7 @@ public class AnotherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_another);
 
+        // 从MainActivity接收
         Intent intent = getIntent();
         String fromMain = intent.getStringExtra("editToAnother");
         TextView textFromMain = (TextView)findViewById(R.id.textFromMain);
@@ -25,6 +26,7 @@ public class AnotherActivity extends AppCompatActivity {
         buttonToMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // 发送至MainActivity
                 EditText editToMain = (EditText)findViewById(R.id.editToMain);
                 Intent intent = getIntent();
                 intent.putExtra("editToMain", editToMain.getText().toString());

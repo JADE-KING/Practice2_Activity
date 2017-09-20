@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         buttonToAnother.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // 发送至AnotherActivity
                 EditText editToAnother = (EditText)findViewById(R.id.editToAnother);
                 Intent intent = new Intent(MainActivity.this, AnotherActivity.class);
                 intent.putExtra("editToAnother", editToAnother.getText().toString());
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if(requestCode == 0 && resultCode == 0) {
+            // 从AnotherActivity接收
             String str = data.getStringExtra("editToMain");
             TextView textFromAnother = (TextView)findViewById(R.id.textFromAnother);
             textFromAnother.setText("Text from another activity:\n" + str);
